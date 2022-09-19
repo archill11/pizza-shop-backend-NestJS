@@ -1,6 +1,6 @@
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
-@Entity('categoryes')
+@Entity('[pizza-res]-categoryes')
 export class CategoryeEntity {
   @PrimaryGeneratedColumn()
   id: number;
