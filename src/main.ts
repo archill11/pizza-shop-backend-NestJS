@@ -7,7 +7,7 @@ async function bootstrap() {
   // для использования class-validator подключаем ValidationPipe
   app.useGlobalPipes(new ValidationPipe());
   app.enableCors();
-  await app.listen(4444);
+  await app.listen(process.env.PORT || 4444);
   console.log('Server ok');
 }
 bootstrap();
