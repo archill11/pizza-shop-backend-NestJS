@@ -3,30 +3,8 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { CategoryesModule } from './categoryes/categoryes.module';
-import { ConfigModule, ConfigService } from '@nestjs/config';
 import { CategoryeEntity } from './categoryes/entities/categorye.entity';
 import { config } from 'dotenv';
-
-
-// @Module({
-//   imports: [
-//     TypeOrmModule.forRoot({
-//       type: 'postgres',
-//       host: 'localhost',
-//       port: 5432,
-//       username: 'root',
-//       password: 'root',
-//       database: 'pizza-res',
-//       entities: [CategoryeEntity],
-//       synchronize: true,
-//     }),
-//     CategoryesModule,
-//   ],
-//   controllers: [AppController],
-//   providers: [AppService],
-// })
-// export class AppModule {}
-
 
 config();
 @Module({
